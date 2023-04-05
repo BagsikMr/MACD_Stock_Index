@@ -18,7 +18,7 @@ float EMA_value(vector<float> temp_data,int N,int Now)
 
 	for (int i = 0; i < N; i++)
 	{
-		//if (N == 10)
+		
 		numerator = numerator + temp_data[Now] * pow((1 - alfa), i);
 		denominator = denominator + pow((1 - alfa), i);
 		Now--;
@@ -28,7 +28,7 @@ float EMA_value(vector<float> temp_data,int N,int Now)
 };
 int main()
 {
-	ifstream file_in("Dane_in.csv");
+	ifstream file_in("apple.csv"); //apple.csv cdr.csv msft.csv
 	ofstream file_out("MACDiSignal.csv");
 	string line;
 	string token;
@@ -101,7 +101,8 @@ int main()
 	}
 
 	income = budget - START_UP_CAPITAL;
-	cout << income << endl;
+	cout <<"\n\n   Zysk: " << income << endl;
+	cout << "   Jest to: " << income / START_UP_CAPITAL * 100 << "%"<<endl;
 	file_out.close();
 	file_in.close();
 }
