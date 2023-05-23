@@ -16,11 +16,11 @@ It then performs a basic buy/sell strategy based on the crossover of the MACD an
 4. Run the compiled program.
 
 ## How It Works
-1. The program reads the stock data from the input file (apple.csv) and extracts the necessary information.
+1. The program reads the stock data from the input file (`apple.csv`) and extracts the necessary information.
 2. It calculates the MACD by subtracting the Exponential Moving Average (EMA) of the stock prices over a shorter period (13 days) from the EMA over a longer period (27 days).
-3. The MACD values are stored in a vector (MACD).
+3. The MACD values are stored in a vector (`MACD`).
 4. The program calculates the signal line by taking the EMA of the MACD values over a certain period (10 days).
-5. The MACD and signal line values are written to an output file (MACDiSignal.csv).
+5. The MACD and signal line values are written to an output file (`MACDiSignal.csv`).
 6. Based on the crossover of the MACD and the signal line, the program determines whether to buy or sell stocks.
 7. The program keeps track of the budget, the number of stocks owned, and calculates the income and percentage gain/loss.
 
