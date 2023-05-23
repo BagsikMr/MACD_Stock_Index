@@ -46,6 +46,19 @@ At the end of the program, it prints the following information:
 - Profit/Loss: The net income gained or lost from the trading strategy.
 - Percentage Gain/Loss: The percentage gain or loss relative to the initial capital.
 
+## Visualizing Results
+
+1. You can use the provided MATLAB code to visualize the generated data.
+2. Ensure that you have MATLAB installed on your system.
+3. Open MATLAB and navigate to the project directory.
+4. Copy and paste the MATLAB code into a MATLAB script file (e.g., visualize_results.m).
+5. Modify the file paths if necessary to match the generated output files (MACDiSignal.csv, Dane_in.csv).
+6. Run the MATLAB script.
+7. The script will read the data from the CSV files and generate plots.
+8. The MACD and signal line plot will be saved as MACD.png.
+9. The highest stock price plot will be saved as Wykres_ceny.png.
+0. Please note that you may need to adjust the code or customize it further based on your specific needs and preferences.
+
 ## License
 This project is licensed under the **MIT License**.
 
