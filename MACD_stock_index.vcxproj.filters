@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ProjektZNumerycznych.cpp">
+    <ClCompile Include="MACD_stock_index.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
