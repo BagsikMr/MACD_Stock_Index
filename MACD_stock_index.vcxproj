@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{81320649-6084-435e-bddf-e8898f1eb5c1}</ProjectGuid>
-    <RootNamespace>ProjektZNumerycznych</RootNamespace>
+    <RootNamespace>MACD_stock_index</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
