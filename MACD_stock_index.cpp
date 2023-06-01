@@ -34,8 +34,8 @@ int main()
 	string token;
 	vector<float> MACD,temp_data;
 	int signal_iterator = 0;
-	float last_macd_value = 0; //móg³bym po prostu wykorzystywaæ vector macd ale tak bêdzie ³adniej
-	float last_singal_value = 0; //do sprawdzenia z której strony linie sie przeciely
+	float last_macd_value = 0; //mÃ³gÂ³bym po prostu wykorzystywaÃ¦ vector macd ale tak bÃªdzie Â³adniej
+	float last_singal_value = 0; //do sprawdzenia z ktÃ³rej strony linie sie przeciely
 	float macd_value = 0;
 	float signal_value = 0;
 
@@ -43,24 +43,24 @@ int main()
 	float income = 0;
 	int number_of_actions = 0;
 
-	if (!file_in.is_open()) // sprawdzenie czy uda³o siê otworzyæ plik
+	if (!file_in.is_open()) // sprawdzenie czy udaÂ³o siÃª otworzyÃ¦ plik
 	{
-		cout << "Nie uda³o siê otworzyæ pliku!" << endl;
+		cout << "Nie udaÂ³o siÃª otworzyÃ¦ pliku!" << endl;
 		return 1;
 	}
-	getline(file_in,line); //pierwsza linijka zawieraj¹ce opis kolumn
+	getline(file_in,line); //pierwsza linijka zawierajÂ¹ce opis kolumn
 
 
 	for (int i = 0;getline(file_in, line);i++) //pobieranie kolejnych linii z pliku
 	{
 		istringstream ss(line);
-		for (int j = 0; getline(ss, token, ';'); j++) //pobieranie kolejnych wyra¿eñ rozdzielonych œrednikiem
+		for (int j = 0; getline(ss, token, ';'); j++) //pobieranie kolejnych wyraÂ¿eÃ± rozdzielonych Å“rednikiem
 		{
 			if (i > 25 && j==0) //zapisanie dat w pierwszej kolumnie outputu
 			{
 				file_out << token << ';';
 			}
-			if (j == 2) //wziêcie trzeciej kolumny
+			if (j == 2) //wziÃªcie trzeciej kolumny
 			{	
 				temp_data.push_back(stof(token));
 				if (i>25)
@@ -69,8 +69,8 @@ int main()
 
 					macd_value = EMA_value(temp_data, 13, i) - EMA_value(temp_data, 27, i);
 					MACD.push_back(macd_value);
-					file_out << macd_value << ';'; //zapisanie w drugiej kolumnie wartoœci MACD
-					if (i > 34) //zapisanie w outputcie w 3 kolumnie wartoœci z signala, dla startu bêd¹ to zera poniewa¿ jest liczony na podstawie macd
+					file_out << macd_value << ';'; //zapisanie w drugiej kolumnie wartoÅ“ci MACD
+					if (i > 34) //zapisanie w outputcie w 3 kolumnie wartoÅ“ci z signala, dla startu bÃªdÂ¹ to zera poniewaÂ¿ jest liczony na podstawie macd
 					{
 						last_singal_value = signal_value;
 
