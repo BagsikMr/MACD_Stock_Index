@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjektZNumerycznych", "ProjektZNumerycznych.vcxproj", "{81320649-6084-435E-BDDF-E8898F1EB5C1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MACD_stock_index", "MACD_stock_index.vcxproj", "{81320649-6084-435E-BDDF-E8898F1EB5C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
